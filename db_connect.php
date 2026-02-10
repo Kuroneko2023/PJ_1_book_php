@@ -15,5 +15,5 @@ $conn->set_charset("utf8mb4");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-// echo "Connected successfully"; // บรรทัดนี้คอมเมนต์ไว้ เวลาใช้จริงจะได้ไม่โชว์
+
 ?>

@@ -2,8 +2,6 @@
 session_start();
 require_once 'db_connect.php';
 
-// --- หมายเหตุ: ลบ require_once 'auth.php' ออก เพื่อให้คนทั่วไปดูรายการหนังสือได้ ---
-
 // --- 1. เตรียมตัวแปรสำหรับค้นหา ---
 $search_text = "";
 $search_category = "";

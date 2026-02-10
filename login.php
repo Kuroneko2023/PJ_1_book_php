@@ -1,9 +1,8 @@
 <?php
-session_start(); // เริ่มต้น Session (สำคัญมาก!)
+session_start(); 
 require_once 'db_connect.php';
 
-// ถ้ามี Session อยู่แล้ว (Login แล้ว) ให้เด้งไปหน้าแรกเลย
-if (isset($_SESSION['user_id'])) {
+
     header("Location: index.php");
     exit();
 }

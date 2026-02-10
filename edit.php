@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'auth.php'; // เรียกยามมาเฝ้า
+require_once 'auth.php';
 require_once 'db_connect.php';
 
 if (!isset($_GET['id'])) { header("location: index.php"); exit(); }

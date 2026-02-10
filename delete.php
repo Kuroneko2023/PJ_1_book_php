@@ -20,7 +20,7 @@ if (isset($_GET['id'])) {
         $sql_delete = "DELETE FROM books WHERE id = '$id'";
 
         if ($conn->query($sql_delete) === TRUE) {
-            // 4. ถ้าลบใน DB สำเร็จ -> ให้ไปลบไฟล์รูปภาพออกจากโฟลเดอร์ uploads (ถ้ามี)
+            // 4. ถ้าลบใน DB สำเร็จ -> ให้ไปลบไฟล์รูปภาพออกจากโฟลเดอร์ uploads 
             if (!empty($image_to_delete)) {
                 $file_path = "uploads/" . $image_to_delete;
                 if (file_exists($file_path)) {
